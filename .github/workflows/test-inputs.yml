@@ -6,9 +6,18 @@ on:
         description: "select environment"
         required: true
         default: dev
+        type: choice 
+        options:
+          - dev
+          - test
+          - uat
+          - prod
+        artifact_tag:
+          description: select tag to deploy
+          required: true
 jobs:
   test-input:
     runs-on: ubuntu-latest
     steps:
       - name: deplot the application
-        run: echo "deploying app into ${{inputs.environment}}"
+        run: echo "deploying app into ${{inputs.artifact_tag}} app into {{iputs.environment}}

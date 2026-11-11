@@ -16,8 +16,8 @@ jobs:
        runs-on: ubuntu-latest
        steps:
             - name: test-step
-              run : echo "print step1"
-              run : df -Th
-              run : free -h
-              run : hostname
-              run : date
+            - run : echo "print step1"
+            - run : df -Th
+            - run : free -h
+            - run : hostname
+            - run : date

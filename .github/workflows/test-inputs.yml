@@ -19,5 +19,5 @@ jobs:
   test-input:
     runs-on: ubuntu-24.04
     steps:
-      - name: deplot the application
-        run: echo "deploying app into ${{inputs.artifact_tag}} app into {{inputs.environment}}
+      - name: deploy the application
+        run: echo "deploying app into ${{ inputs.artifact_tag}} app into {{ inputs.environment}}

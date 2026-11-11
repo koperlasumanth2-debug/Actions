@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test-step
-        run:|
+        run: |
           echo "print step1"
           df -Th
           free -h

@@ -1,9 +1,23 @@
 ## Running single shell command in workflow ##
-name : test-code
-on : workflow_dispatch
+#name : test-code
+#on : workflow_dispatch
+#jobs:
+ # job-1:
+  #  runs-on: ubuntu-latest
+   # steps:
+    #  - name: test-step
+     #   run: echo "jon-1 is completed"
+
+
+name: multiple shell cmds in single step
+on: workflow_dispatch
 jobs:
-  job-1:
-    runs-on: ubuntu-latest
-    steps:
-      - name: test-step
-        run: echo "jon-1 is completed"
+     job-1 :
+       runs-on: ubuntu-latest
+       steps:
+            - name: test-step
+              run : echo "print step1"
+              run : df -Th
+              run : free -h
+              run : hostname
+              run : date

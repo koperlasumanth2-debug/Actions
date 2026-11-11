@@ -2,9 +2,10 @@ name: test-inputs
 on:
   workflow_dispatch:
     inputs:
-      #description: "select environment"
-      required: true
-      default: dev
+      environment:
+        #description: "select environment"
+        required: true
+        default: dev
 jobs:
   test-input:
     runs-on: ubuntu-latest

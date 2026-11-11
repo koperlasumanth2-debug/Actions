@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: deplot the application
-        run: echo "deploying app into $ {{inputs.environment}}"
+        run: echo "deploying app into ${{inputs.environment}}"

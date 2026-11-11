@@ -12,7 +12,7 @@ on:
           - test
           - uat
           - prod
-        artifact_tag:
+     artifact_tag:
           description: select git tag to deploy
           required: true
 jobs:

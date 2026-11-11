@@ -20,4 +20,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: deplot the application
-        run: echo "deploying app into ${{inputs.artifact_tag}} app into {{iputs.environment}}
+        run: echo "deploying app into ${{inputs.artifact_tag}} app into {{inputs.environment}}

@@ -12,12 +12,13 @@
 name: multiple shell cmds in single step
 on: workflow_dispatch
 jobs:
-     job-1 :
+  job-1 :
        runs-on: ubuntu-latest
        steps:
             - name: test-step
-            - run : echo "print step1"
-            - run : df -Th
-            - run : free -h
-            - run : hostname
-            - run : date
+            - run : |
+                echo "print step1"
+                df -Th
+                free -h
+                hostname
+                date

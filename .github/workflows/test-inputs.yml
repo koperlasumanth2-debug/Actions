@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        #description: "select environment"
+        description: "select environment"
         required: true
         default: dev
 jobs:

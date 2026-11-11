@@ -13,11 +13,11 @@ on:
           - uat
           - prod
         artifact_tag:
-          description: select tag to deploy
+          description: select git tag to deploy
           required: true
 jobs:
   test-input:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: deplot the application
         run: echo "deploying app into ${{inputs.artifact_tag}} app into {{inputs.environment}}

@@ -3,8 +3,8 @@ on: push
 jobs:
   test-context:
     runs-on: ubuntu-latest
-  steps:
+    steps:
     - name: using context variables
       run: |
-        echo: "this workflow triggered by ${{ github.actor }}"
-        echo: "the repo name is ${{ github.repository }}"
+        echo "this workflow triggered by ${{ github.actor }}"
+        echo "the repo name is ${{ github.repository }}"

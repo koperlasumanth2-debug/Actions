@@ -11,5 +11,5 @@ jobs:
       - name: run if push to main branch
         if: github.actor =='koperlasumanth2-debug' || github.ref == 'test-user'
         run: echo "pushed to main branch"
-        name: run normally
+      - name: run normally
         run: echo "this if normal run"

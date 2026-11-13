@@ -4,7 +4,7 @@ jobs:
   build:
     outputs:
       version: ${{ steps.step1.outputs.version }}
-    runs-on: ububuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: step1
         id: step1
@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step2
-        run: echo "deploy version $ {{ needs.build.outputs.version }}"
+        run: echo "deploy version ${{ needs.build.outputs.version }}"

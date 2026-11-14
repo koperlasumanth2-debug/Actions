@@ -1,5 +1,5 @@
 name: test-context
-#on: push
+on: workflow_dispatch
 jobs:
   test-context:
     runs-on: ubuntu-latest

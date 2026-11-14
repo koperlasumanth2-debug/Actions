@@ -1,5 +1,5 @@
 name: sharing data btw jobs by using outputs
-on: push
+#on: push
 jobs:
   build:
     outputs:

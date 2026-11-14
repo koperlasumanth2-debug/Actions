@@ -1,6 +1,6 @@
 name: test-if  
 on: 
-  push:
+  #push:
     branches:
       - main
       - test

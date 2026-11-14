@@ -1,5 +1,5 @@
 name: test-context
-on: push
+#on: push
 jobs:
   test-context:
     runs-on: ubuntu-latest

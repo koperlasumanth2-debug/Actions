@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run if push to main branch
-        if: github.actor =='hemanth' || github.ref == 'test-user'
+        if: github.actor =='koperlasumanth2-debug' || github.ref == 'test-user'
         run: echo "pushed to main branch"
       - name: run normally
         run: echo "this if normal run"

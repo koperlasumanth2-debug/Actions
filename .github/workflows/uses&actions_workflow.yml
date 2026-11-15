@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout scm
-        uses: actions/chechout@v4
+        uses: actions/checkout@v4
       - name: print a file
         run: cat index.html

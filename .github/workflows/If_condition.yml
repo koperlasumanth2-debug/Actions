@@ -1,6 +1,6 @@
 name: test-if  
 on: 
-  #push:
+  workflow_dispatch: 
     branches:
       - main
       - test

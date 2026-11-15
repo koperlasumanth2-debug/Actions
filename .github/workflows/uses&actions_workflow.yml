@@ -7,4 +7,4 @@ jobs:
       - name: checkout scm
         uses: actions/checkout@v4
       - name: print a file
-        run: cat index.html
+        run: cat .github/workflows/index.html

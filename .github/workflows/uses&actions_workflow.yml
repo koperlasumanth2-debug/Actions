@@ -1,1 +1,10 @@
-<h1> welocme to github actions </h1>
+name: uses & actions
+on: workflow_dispatch
+jobs:
+  action-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout scm
+        uses: actions/chechout@v4
+      - name: print a file
+        run: cat index.html

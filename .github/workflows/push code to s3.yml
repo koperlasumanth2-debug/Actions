@@ -14,4 +14,4 @@ jobs:
           aws-region: eu-north-1
       - name: sync to s3
         run: |
-          aws s3 sync ./ s3://testbucket-496305/ --exclude "*" --include "index.html"
+          aws s3 sync ./ s3://testbucket-100698/ --exclude "*" --include "index.html"

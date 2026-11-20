@@ -29,3 +29,20 @@ jobs:
     steps:
       - name: Deploy to Main
         run: echo "deploying code to main environment"
+
+  
+  success_notification:
+    needs: ['quality-check', 'dev-deploy', 'main-deploy']
+    if: always() && !failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Success
+        run: echo "Success mail sent to team"
+
+  failure_notification:
+    needs: ['quality-check', 'dev-deploy', 'main-deploy']
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Failure
+        run: echo "Failure mail sent to team"
